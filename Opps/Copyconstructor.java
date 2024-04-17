@@ -25,10 +25,23 @@ class Student {
     String name;
     String hobby[];
 
+    /*
+     * //Shallow copy
+     * 
+     * Student(Student s1) {
+     * this.age = s1.age;
+     * this.hobby = s1.hobby;
+     * this.name = s1.name;
+     * }
+     */
     Student(Student s1) {
+        hobby = new String[3];
         this.age = s1.age;
-        this.hobby = s1.hobby;
         this.name = s1.name;
+        for (int i = 0; i < hobby.length; i++) {
+            hobby[i] = s1.hobby[i];
+        }
+
     }
 
     Student(int age, String password, String name) {
