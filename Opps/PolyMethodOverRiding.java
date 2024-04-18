@@ -12,7 +12,7 @@ class Animal {
     }
 }
 
-class Tiger {
+class Tiger extends Animal {
     void eat() {
         System.out.println("eat only beef");
     }
