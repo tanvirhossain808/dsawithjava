@@ -7,8 +7,8 @@ public class printReverNumber {
             return;
         }
 
-        System.out.print(n + " ");
         printReverNumbers(n - 1);
+        System.out.print(n + " ");
     }
 
     public static void main(String[] args) {
