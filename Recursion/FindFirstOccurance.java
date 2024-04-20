@@ -2,11 +2,11 @@ package Recursion;
 
 public class FindFirstOccurance {
     public static int printFirstOccurance(int arr[], int i, int target) {
-        if (arr[i] == target) {
-            return i;
-        }
         if (arr.length == i) {
             return -1;
+        }
+        if (arr[i] == target) {
+            return i;
         }
 
         return printFirstOccurance(arr, i + 1, target);
