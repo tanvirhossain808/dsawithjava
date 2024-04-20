@@ -17,6 +17,8 @@ public class RemoveDupllicate {
     }
 
     public static void main(String[] args) {
+        // boolean hey[]=new boolean{26};
+        int k[] = { 3 };
         String character = "mangomanog";
         printNewString(character, 0, new StringBuilder(""), new boolean[26]);
 
