@@ -13,6 +13,6 @@ public class PiarOfFriend {
 
     public static void main(String[] args) {
         int frind = 3;
-        System.out.println(pairFrind(3));
+        System.out.println(pairFrind(4));
     }
 }
